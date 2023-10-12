@@ -9,7 +9,7 @@
 }
 
 :root {
-    --var-primary-color: #28888E8FF;
+    --var-primary-color: #284d8eb5;
 }
 
 html {
@@ -49,18 +49,24 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+img {
+    height: 8rem;
+    width: 8rem;
+}
+
 /* registation design */
 
 .registeration-header {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("./bg1.jpg");
+        url("./bgg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 /* navbar */
-.container{
+.container {
     height: 10vh;
     width: 80%;
     display: flex;
@@ -68,7 +74,8 @@ input[type="submit"] {
     margin: auto;
     align-items: center;
 }
-ul{
+
+ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -80,19 +87,117 @@ ul{
 .logo a {
     font-size: 3rem;
     letter-spacing: 0.08rem;
-    color:	#0c0b0b;
+    color: #0c0b0b;
     font-weight: 600;
     text-decoration: none;
     font-family: 'Urbanist', sans-serif;
     text-transform: uppercase;
 }
-li > a{
+
+li>a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
 }
-li >a:hover{
-  font-size: 1.9rem;
-  color: #0c0b0b;
-  font-weight: 300;
+
+li>a:hover {
+    font-size: 1.9rem;
+    color: #0c0b0b;
+    font-weight: 300;
+}
+
+/* registertation form */
+
+main {
+    height: 80vh;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-two--column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.registration,
+.login {
+    min-height: 30rem;
+    min-width: 40vh;
+}
+
+.form-text {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./rg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1rem 2rem;
+    background-color: brown;
+}
+
+.login-form,
+.registration-form {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.form-text p {
+    width: 35ch;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.form-text .registration-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+/* hover btn effect */
+.form-text .registration-btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+/* adjust social icons */
+.fa-brands {
+    height: 4rem;
+    width: 4rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 50%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    color: rgba(34, 34, 194, 0.942);
+    margin: 1rem 0 0.5rem 0;
+}
+.social-icons{
+    display: flex;
+    gap: 1.5rem;
+}
+input {
+    width: 20rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.7rem 0;
+    letter-spacing: 0.08rem;
+    background-color: #e8e8e8;
+    padding: 0.8rem 1.8rem;
+}
+
+input[type="submit"] {
+    border: .1rem solid #fff;
+    background-color: var(--var-primary-color);
+    border-radius: 0.5rem;
+    color: #fff;
 }
