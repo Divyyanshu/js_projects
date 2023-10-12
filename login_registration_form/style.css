@@ -9,7 +9,7 @@
 }
 
 :root {
-    --var-primary-color: #284d8eb5;
+    --var-primary-color: #0a3277b5;
 }
 
 html {
@@ -53,8 +53,8 @@ input[type="submit"] {
 }
 
 img {
-    height: 8rem;
-    width: 8rem;
+    height: 10rem;
+    width: 10rem;
 }
 
 /* registation design */
@@ -66,7 +66,7 @@ img {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("./main.jpg");
+        url("../login_registration_form/image/main.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ li>a {
 
 li>a:hover {
     font-size: 1.9rem;
-    color: #0c0b0b;
+    color: #d70a0a;
     font-weight: 300;
 }
 
@@ -133,28 +133,13 @@ main {
     min-width: 40vh;
 }
 
-.form-text-login{
+.form-text{
     height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./rg3.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    padding: 1rem 2rem;
-    background-color: brown;
-    border-bottom-left-radius: 5rem;
-}
-.form-text-register{
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./rg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../login_registration_form/image/login2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,34 +168,40 @@ main {
     background-color: #fff;
     border-top-right-radius: 5rem;
 }
-
-.form-text-login p {
+.login .form-text{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../login_registration_form/image/register1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.form-text p {
     width: 35ch;
     text-align: center;
     margin: 2rem 0 3rem 0;
 }
-.form-text-register p{
+.form-text p{
     width: 35ch;
     text-align: center;
     margin: 2rem 0 3rem 0;
 }
-.form-text-register .registration-btn {
+.form-text .registration-btn {
     background-color: #fff;
     color: #000;
 }
 
 /* hover btn effect */
-.form-text-register .registration-btn:hover {
+.form-text .registration-btn:hover {
     background-color: transparent;
     color: #fff;
 }
-.form-text-login .login-btn {
+.form-text .login-btn {
     background-color: #fff;
     color: #000;
 }
 
 /* hover btn effect */
-.form-text-login .login-btn:hover {
+.form-text .login-btn:hover {
     background-color: transparent;
     color: #fff;
 }
