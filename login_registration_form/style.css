@@ -29,11 +29,13 @@ h1 {
 
 h2 {
     font-size: 3rem;
+    margin-top: 4rem;
 }
 
 p {
     font-size: 1.6rem;
     letter-spacing: 0.08rem;
+    margin-top: 1rem;
 }
 
 button,
@@ -47,6 +49,7 @@ input[type="submit"] {
     background-color: transparent;
     color: #fff;
     cursor: pointer;
+    margin-bottom: 4rem;
 }
 
 img {
@@ -58,8 +61,12 @@ img {
 
 .registeration-header {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("./bgg.jpg");
+        url("./main.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -67,7 +74,7 @@ img {
 
 /* navbar */
 .container {
-    height: 10vh;
+    height: 15vh;
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -109,8 +116,7 @@ li>a:hover {
 /* registertation form */
 
 main {
-    height: 80vh;
-    margin-top: 5rem;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +133,22 @@ main {
     min-width: 40vh;
 }
 
-.form-text {
+.form-text-login{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./rg3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1rem 2rem;
+    background-color: brown;
+    border-bottom-left-radius: 5rem;
+}
+.form-text-register{
     height: inherit;
     display: flex;
     justify-content: center;
@@ -140,9 +161,18 @@ main {
     color: #fff;
     padding: 1rem 2rem;
     background-color: brown;
+    border-bottom-left-radius: 5rem;
 }
-
-.login-form,
+.login-form{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-top-right-radius: 5rem;
+}
 .registration-form {
     width: 100%;
     min-height: 40vh;
@@ -151,21 +181,36 @@ main {
     align-items: center;
     flex-direction: column;
     background-color: #fff;
+    border-top-right-radius: 5rem;
 }
 
-.form-text p {
+.form-text-login p {
     width: 35ch;
     text-align: center;
     margin: 2rem 0 3rem 0;
 }
-
-.form-text .registration-btn {
+.form-text-register p{
+    width: 35ch;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+.form-text-register .registration-btn {
     background-color: #fff;
     color: #000;
 }
 
 /* hover btn effect */
-.form-text .registration-btn:hover {
+.form-text-register .registration-btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+.form-text-login .login-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+/* hover btn effect */
+.form-text-login .login-btn:hover {
     background-color: transparent;
     color: #fff;
 }
@@ -179,20 +224,22 @@ main {
     padding: 1.2rem;
     font-size: 1.6rem;
     color: rgba(34, 34, 194, 0.942);
-    margin: 1rem 0 0.5rem 0;
+    margin: 1rem 0 0.8rem 0;
 }
-.social-icons{
+
+.social-icons {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
 }
+
 input {
-    width: 20rem;
+    width: 25rem;
     border: none;
     border-radius: 0.5rem;
-    margin: 0.7rem 0;
+    margin: 0.7rem 10rem;
     letter-spacing: 0.08rem;
     background-color: #e8e8e8;
-    padding: 0.8rem 1.8rem;
+    padding: 1rem 2rem;
 }
 
 input[type="submit"] {
@@ -200,4 +247,21 @@ input[type="submit"] {
     background-color: var(--var-primary-color);
     border-radius: 0.5rem;
     color: #fff;
+}
+
+/* logice toogleing  */
+
+.registration:not(.login-section-display) {
+    display: none;
+}
+
+.login-section-display .registration {
+    display: block;
+}
+
+.login-section-display .login {
+    display: none;
+}
+P{
+    text-align: center;
 }
